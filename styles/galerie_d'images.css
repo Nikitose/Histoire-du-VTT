@@ -1,0 +1,166 @@
+/**********************BASE**********************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/**********************HEADER*********************/
+/***********BANNIERE***********/
+.banniere {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 10), rgba(0, 0, 0, 0)), url('../images/BANNIERE-1.jpg');
+    background-size: cover;
+    display: flex;
+    padding: 10%;
+}
+
+@keyframes apparition1 {
+    from{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.banniere h1 {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;  
+    align-items: flex-start;
+    max-width: 45%;
+    color: rgb(255, 255, 255);
+    font-family: 'Bowlby One', sans-serif;
+    font-size: 27pt;
+    animation: apparition1 2s ease-out ;
+}
+
+/*************MENU*************/
+
+.menu {
+    padding: 10px;
+    margin: 0px;
+    border-right: 5px double #107385;
+    border-bottom: 5px double #107385;
+    border-left: 5px double #107385;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #000000;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18pt;
+    text-decoration: none;
+    margin: 10px;
+}
+
+li:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: 0.1s;
+}
+
+li a:hover {
+    color: #3c3c3c;
+}
+
+/********************MAIN********************/
+
+h2 {
+    color: black;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 27pt;
+    margin: 70px 0px 30px 0px;
+}
+
+h3{
+    color: black;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 22pt;
+    margin: 50px 0px 20px 0px;
+}
+
+main {
+    text-align: center;
+}
+
+
+main p {
+    font-family: 'Alata', sans-serif;
+    color: rgb(31, 31, 31);
+    font-size: 16pt;
+}
+
+main img {
+    border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+/***img_paires***/
+
+.box_2_img_paires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_2_img_paires img {
+    width: 45%; 
+    height: auto;
+    opacity: 0.87;
+}
+
+.box_2_img_paires img:hover {
+    opacity: 0.9;
+    transform: scale(1.14);
+    transition: 0.1s;
+}
+
+/***img_impair***/
+
+.impaire img {
+    max-width: 800px;
+}
+
+.impaire img:hover {
+    animation: apparition2 0.3s linear forwards ;
+}
+
+@keyframes apparition2 {
+    from{
+        opacity: 1;
+        border: 2px dashed #313131;
+    }
+    to{
+        opacity: 1;
+        border: 8px solid #12424b;
+    }
+}
+
+/**********************FOOTER*********************/
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
