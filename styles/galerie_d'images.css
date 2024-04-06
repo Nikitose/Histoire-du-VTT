@@ -110,6 +110,7 @@ main p {
     font-family: 'Alata', sans-serif;
     color: rgb(31, 31, 31);
     font-size: 16pt;
+    text-align: justify;
 }
 
 main img {
